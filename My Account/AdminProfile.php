@@ -1,4 +1,11 @@
+<?php
+session_start();
+ob_start(); // Start output buffering
 
+// Determine the login status and role
+$loggedIn = isset($_SESSION['username']);
+$isAdmin = $loggedIn && $_SESSION['username'] == 'admin';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +26,9 @@
         }
         .newsboard-button:hover {
             background-color: #FF8B8C;
+        }
+        .hidden{
+            display:none;
         }
     </style>
 </head>
@@ -52,8 +62,9 @@
             <div class="dropdown">
                 <div class="dropdown-word">My Account</div>
                 <ul class="dropdown-content">
-                    <li><a href="../Login System/LogInUser1.php">Sign Up / Log In</a></li>
-                    <li><a href="../My Account/AdminProfile.php">My Profile</a></li>
+                    <li class="<?php echo $loggedIn ? 'hidden' : ''; ?>"><a href="../Login System/LogInUser.php" id="login" >Log In</a></li>
+                    <li class="<?php echo $loggedIn && !$isAdmin ? '' : 'hidden'; ?>"><a href="../My Account/UserProfile.php" id="profile">My Profile</a></li>
+                    <li class="<?php echo $loggedIn && $isAdmin ? '' : 'hidden'; ?>"><a href="../My Account/AdminProfile.php" id="admin" >Admin</a></li>
                 </ul>
             </div>
         </div>
@@ -81,7 +92,7 @@
         </section>
     </main>
     <div style="text-align: right; padding: 40px;">
-        <form action="logout1.php" method="post">
+        <form action="../Login System/logout1.php" method="post">
             <button type="submit" class="logout-button">Log Out</button>
         </form>
     </div>
