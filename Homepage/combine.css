@@ -1,0 +1,296 @@
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 6px 4px rgba(111, 106, 116, 0.548);
+}
+
+.nav-section-a, .nav-section-b {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+
+.nav-section-a a {
+    margin: 0 75px;
+    text-decoration: none;
+    color: rgba(13, 12, 12, 0.705);
+}
+
+.nav-section-b .dropdown {
+    margin: 0 15px; /* Adjust this value for more or less spacing */
+}
+
+.nav-section-a a:hover, .nav-section-b .dropdown-word:hover {
+    text-decoration: underline;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown word */
+.dropdown-word {
+    color: #ffffff;
+    padding: 16px;
+    font-size: x-large;
+    cursor: pointer;
+    text-decoration: none; /* Ensure links don't have underline by default */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff9fd;
+    box-shadow: 0px 4px 16px 0px rgb(44, 33, 15);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li a {
+    color: #5B5F97;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li a:hover {
+    background-color: #b8b8d188;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the dropdown word on hover */
+.dropdown:hover .dropdown-word {
+    color: #948467;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.box {
+    width: 40%;
+    height: 40%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents content overflow */
+    position: relative; /* Establishes positioning context */
+}
+
+.box img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.box-content {
+    position: relative;
+    z-index: 1; /* Ensure text and button are above the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rectangle-box img{
+    width: 400px;
+    height: 250px;
+    margin-top: 30px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.rectangle-box {
+    display: flex;
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width for responsiveness */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto; /* Center horizontally with auto margins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.box h3,
+.rectangle-box h3 {
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.box p{
+    font-size: large;
+    color: #555;
+}
+.rectangle-box p {
+    margin-left: 20px;
+    font-size: large;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFC145;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #e0ac2f;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF6B6C; /* Light Red */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+ 
+.footerContainer {
+    width: 100%;
+    padding: 30px 35px 10px;
+}
+ 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+ 
+.socialIcons a i {
+    font-size: 30px;
+    color: black;
+    opacity: 0.9;
+}
+ 
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+ 
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+ 
+.footerNav {
+    margin: 30px 0;
+}
+ 
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+ 
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+ 
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.footerBottom p {
+    /* copyright colour*/
+    color: white;
+    font-size: 15px;
+}
+ 
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 5px;
+}
+ 
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}

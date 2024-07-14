@@ -1,0 +1,439 @@
+/* Resetting default styles */
+body, h1, p, label, input, button, ul, li, figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color:#FFFFFB; /* French Grey */
+    color: #B8B8D1; /* Ultra Violet */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    position: relative;
+}
+ 
+nav {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 6px 4px rgba(111, 106, 116, 0.548);
+}
+ 
+.nav-section-a{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+ 
+.nav-section-b {
+    
+    justify-content: center;
+    margin: 20px 0;
+}
+ 
+ 
+ 
+ 
+.nav-section-a a {
+    margin: 0 75px;
+    text-decoration: none;
+    color: rgba(13, 12, 12, 0.705);
+}
+ 
+.nav-section-b .dropdown {
+    margin: 0 15px; /* Adjust this value for more or less spacing */
+}
+ 
+.nav-section-a a:hover, .nav-section-b .dropdown-word:hover {
+    text-decoration: underline;
+}
+ 
+/* Style the dropdown container */
+.dropdown {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-word a {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+/* Style the dropdown word */
+.dropdown-word {
+    color: #ffffff;
+    padding: 16px;
+    font-size: x-large;
+    cursor: pointer;
+    text-decoration: none; /* Ensure links don't have underline by default */
+}
+ 
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff9fd;
+    box-shadow: 0px 4px 16px 0px rgb(44, 33, 15);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 4;
+}
+ 
+/* Style the links inside the dropdown */
+.dropdown-content li a {
+    color: #5B5F97;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ 
+/* Change color of dropdown links on hover */
+.dropdown-content li a:hover {
+    background-color: #b8b8d188;
+}
+ 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ 
+/* Change the color of the dropdown word on hover */
+.dropdown:hover .dropdown-word {
+    color: #948467;
+}
+
+.title-band h1{
+    color:#5B5F97;
+    margin: 15px;
+}
+/* Main Section Styles */
+main {
+    padding: 20px; /* メインセクションの内側の余白 */
+}
+.key-sentence h2{
+    color:#FF6B6C;
+    margin-left: 40px;
+}
+
+.about-us-section {
+    margin-bottom: 40px; /* 各セクションの下マージン */
+}
+
+.about-us-section .mission h2 {
+    color: #001f3f; /* Mission セクションのタイトルのテキストカラーを dark blue に設定 */
+}
+
+.about-us-section .vision h2 {
+    color: #8aa39b; /* Vision セクションのタイトルのテキストカラーを shagreen に設定 */
+}
+
+/* Mission と Vision の画像とテキストのスタイル */
+.mission-container, .vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-container img, .vision-container img {
+    max-width: 45%; /* 画像の最大幅 */
+    border-radius: 8px; /* 画像の角丸 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 画像の影 */
+}
+
+.overlay {
+    flex: 1;
+    padding: 20px;
+}
+
+.overlay-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.about-us-section .sunny-image {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.mission-container,
+.vision-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.mission-container img,
+.vision-container img{
+    display: flex;
+}
+.mission-container:hover .overlay,
+.vision-container:hover .overlay {
+    opacity: 1;
+}
+.overlay-text{
+    display: flex;
+}
+
+.about-us-section .mission-container,
+.about-us-section .vision-container {
+    width: 100%;
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the containers */
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF6B6C; /* Light Red */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+ 
+.footerContainer {
+    width: 100%;
+    padding: 30px 35px 10px;
+}
+ 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+ 
+.socialIcons a i {
+    font-size: 30px;
+    color: black;
+    opacity: 0.9;
+}
+ 
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+ 
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+ 
+.footerNav {
+    margin: 30px 0;
+}
+ 
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+ 
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+ 
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.footerBottom p {
+    /* copyright colour*/
+    color: white;
+    font-size: 15px;
+}
+ 
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 5px;
+}
+ 
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+ 
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    z-index: 5;
+}
+ 
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #5B5F97;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+ 
+.menu-icon span:first-child {
+    transform: translateY(0);
+}
+ 
+.menu-icon span:last-child {
+    transform: translateY(0);
+}
+   
+#menu-toggle {
+    display: none;
+}
+ 
+.sidebar {
+    background-color: #5B5F97; /* Main color: Ultra Violet */
+    padding: 20px;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 4;
+}
+ 
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #5B5F97;
+    padding: 20px;
+    transform: translateX(-200px);
+    transition: 0.3s;
+    display: none; /* not to display the bar */
+}
+ 
+#menu-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+    display: block;
+}
+ 
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.sidebar li {
+    margin-bottom: 20px;
+}
+ 
+.sidebar a {
+    text-decoration: none;
+    color: #FFFFFB;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5B5F97;
+}
+ 
+.sidebar a:hover {
+    background-color: #FFC145;
+    color: #5B5F97;
+}
+ 
+#menu-toggle:checked ~ .menu-icon span {
+    background-color: #FFC145;
+}
+ 
+#menu-toggle:checked ~ .menu-icon span:first-child {
+    transform: translateY(0);
+}
+ 
+#menu-toggle:checked ~ .menu-icon span:last-child {
+    transform: translateY(0);
+}

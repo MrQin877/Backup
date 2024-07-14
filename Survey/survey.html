@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Smile Hospital Survey</title>
+  <link rel="stylesheet" href="survey.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="survey.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img src="../image/LogoSShospital.png" alt="Hospital Logo">
+        </figure>
+        <nav style="background-color:#FFC145 ;">
+            <div class="nav-section-a">
+                <a href="../Booking Appointment/bookingform.php">Booking Appointment</a>
+                <a href="../Doctor Profile/doctors profile.html">Doctor Profile</a>
+                <a href="../Common Disease/common diseases.html">Common Disease</a>
+            </div>
+            <div class="nav-section-b">
+                    <div class="dropdown-word">
+                        <a href="../Medical Service/medical services.html" class="dropdown-word">Medical Service</a>
+                    </div>
+                <div class="dropdown">
+                    <div class="dropdown-word">About Us</div>
+                    <ul class="dropdown-content">
+                        <li><a href="../About Us/AboutUs_History.html">Hospital History</a></li>
+                        <li><a href="../About Us/">Vision & Mission</a></li>
+                        <li><a href="../Newsboard/newsboardUser.html">News Board</a></li>
+                        <li><a href="../Survey/survey.html">Survey</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-word">
+                    <a href="../Contact Us/ContactUs.html" class="dropdown-word">Contact Us</a>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-word">My Account</div>
+                    <ul class="dropdown-content">
+                        <li><a href="../Login System/LogInUser.php">Log In</a></li>
+                        <li><a href="../My Account/UserProfile.php">My Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="survey-container">
+        <h1>Voice Your Thoughts: Share & Shape!</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <label for="q1">1. Friendliness of medical staffs:</label>
+                <input type="number" id="q1" name="friendliness" min="1" max="5" required>
+            </div>
+            <div class="question">
+                <label for="q2">2. Knowledge & professionalism of medical staffs:</label>
+                <input type="number" id="q2" name="knowledge" min="1" max="5" required>
+            </div>
+            <div class="question">
+                <label for="q3">3. Cleanliness of overall hospital environment:</label>
+                <input type="number" id="q3" name="cleanliness" min="1" max="5" required>
+            </div>
+            <div class="question">
+                <label for="q4">4. Satisfaction of diagnosis and treatment:</label>
+                <input type="number" id="q4" name="satisfaction" min="1" max="5" required>
+            </div>
+            <div class="question">
+                <label for="q5">5. Likelihood to recommend Sunny Smile Hospital:</label>
+                <input type="number" id="q5" name="recommendation" min="1" max="5" required>
+            </div>
+            <div class="question">
+                <label for="q6">6. Additional comments or suggestions:</label>
+                <textarea id="q6" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="thank-you-container" id="thankYouContainer">
+        <div class="thank-you-message">
+          <span class="exit-icon" id="exitIcon"><i class="fas fa-times"></i></span>
+          <p>Thanks for choosing Sunny Smile Hospital!<br>Enjoy sunny care and smiles!</p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/?lang=zh"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://support.google.com/answer/2451065?hl=en"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="../Homepage/combine.html">Home</a></li>
+                    <li><a href="../Medical Service/medical services.html">Medical Service</a></li>
+                    <li><a href="../Doctor Profile/doctors profile.html">Our Doctors</a></li>
+                    <li><a href="../Booking Appointment/bookingform.php">Appointment Booking</a></li>
+                    <li><a href="../About Us/AboutUs_History.html">About Us</a></li>
+                    <li><a href="../Contact Us/ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024 <span class="designer">SUNNY SMILE HOSPITAL</span></p>
+        </div>
+    </footer>
+</body>
+</html>

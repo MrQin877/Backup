@@ -1,0 +1,302 @@
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 6px 4px rgba(111, 106, 116, 0.548);
+}
+
+.nav-section-a, .nav-section-b {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+
+
+
+
+.nav-section-a a {
+    margin: 0 75px;
+    text-decoration: none;
+    color: rgba(13, 12, 12, 0.705);
+}
+
+.nav-section-b .dropdown {
+    margin: 0 15px; /* Adjust this value for more or less spacing */
+}
+
+.nav-section-a a:hover, .nav-section-b .dropdown-word:hover {
+    text-decoration: underline;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown word */
+.dropdown-word {
+    color: #ffffff;
+    padding: 16px;
+    font-size: x-large;
+    cursor: pointer;
+    text-decoration: none; /* Ensure links don't have underline by default */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff9fd;
+    box-shadow: 0px 4px 16px 0px rgb(44, 33, 15);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li a {
+    color: #5B5F97;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li a:hover {
+    background-color: #b8b8d188;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the color of the dropdown word on hover */
+.dropdown:hover .dropdown-word {
+    color: #948467;
+}
+
+
+.key-messages {
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.medical-services-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; 
+    background-color: #B8B8D1; /* Yellow background color */
+    padding: 20px; /* Padding inside the text container */
+    color: black; /* Black text color */
+    font-size: 24px;
+    text-align: center;
+}
+
+.medical-services-text h1 {
+    font-size: 34px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.services-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10%;
+    margin-bottom: 8%;
+}
+
+.services-slide img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.services-slide h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.services-slide p {
+    font-size: 20px;
+    color: black;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF6B6C; /* Light Red */
+    color: white;
+    position: relative;
+    width: 100%;
+}
+ 
+.footerContainer {
+    width: 100%;
+    padding: 30px 35px 10px;
+}
+ 
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+ 
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+ 
+.socialIcons a i {
+    font-size: 30px;
+    color: black;
+    opacity: 0.9;
+}
+ 
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+ 
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+ 
+.footerNav {
+    margin: 30px 0;
+}
+ 
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ 
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+ 
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+ 
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.footerBottom p {
+    /* copyright colour*/
+    color: white;
+    font-size: 15px;
+}
+ 
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 5px;
+}
+ 
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+ 

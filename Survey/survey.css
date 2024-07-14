@@ -1,0 +1,294 @@
+.logo img {
+  width: 200px;
+  height: auto;
+  margin-bottom: -20px;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #b8b8d1;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 6px 4px rgba(111, 106, 116, 0.548);
+}
+
+.nav-section-a, .nav-section-b {
+  display: flex; 
+  justify-content: center; 
+  margin: 20px 0; 
+}
+
+
+.nav-section-a a {
+  margin: 0 75px;
+  text-decoration: none;
+  color: rgba(13, 12, 12, 0.705);
+}
+
+.nav-section-b .dropdown {
+  margin: 0 15px; /* Adjust this value for more or less spacing */
+}
+
+.nav-section-a a:hover, .nav-section-b .dropdown-word:hover {
+  text-decoration: underline;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown word */
+.dropdown-word {
+  color: #ffffff;
+  padding: 16px;
+  font-size: x-large;
+  cursor: pointer;
+  text-decoration: none; /* Ensure links don't have underline by default */
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff9fd;
+  box-shadow: 0px 4px 16px 0px rgb(44, 33, 15);
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content li a {
+  color: #5B5F97;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li a:hover {
+  background-color: #b8b8d188;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the color of the dropdown word on hover */
+.dropdown:hover .dropdown-word {
+  color: #948467;
+}
+
+.survey-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 5px solid #5b5f97;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+input[type="number"], textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #b8b8d1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ffc145;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #fdcd6b;
+}
+
+/*thankyou msg*/
+.thank-you-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1000; /* Ensure it's above other content */
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-message {
+  background-color: #ffffff;
+  border: 5px solid #ffc145;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative; /* Ensure the exit icon is positioned relative to this container */
+}
+
+.exit-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #ff6b6c;
+}
+
+.exit-icon:hover {
+  color: #fc2929;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FF6B6C; /* Light Red */
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 30px 35px 10px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 30px;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  /* copyright colour*/
+  color: white;
+  font-size: 15px;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+  .footerNav ul {
+      flex-direction: column;
+  }
+  .footerNav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a {
+      padding: 8px;
+      margin: 4px;
+  }
+}
